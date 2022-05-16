@@ -4,6 +4,8 @@ import ShopLogin from '../components/ShopLogin'
 import ShopHome from '../components/ShopHome'
 import HomeWelcome from '../components/HomeWelcome'
 import HomeUsers from '../components/user/HomeUsers'
+import PowerRights from '../components/power/PowerRights'
+import PowerRoles from '../components/power/PowerRoles'
 
 Vue.use(VueRouter)
 
@@ -29,6 +31,14 @@ const router = new VueRouter({
         {
           path: '/users',
           component: HomeUsers
+        },
+        {
+          path: '/rights',
+          component: PowerRights
+        },
+        {
+          path: '/roles',
+          component: PowerRoles
         }
       ]
     }
